@@ -54,9 +54,26 @@ void test5(const char* msg)
   setNode(d,4,NULL,NULL);
   cout << msg << ": " <<   equalPaths(a) << endl;
 }
+void setNode2(Node* n, Node* left=NULL, Node* right=NULL)
+{
+  n->left = left;
+  n->right = right;
+}
+bool testRootLeft()
+{
+    Node a(10);
+    Node b(8);
+    setNode2(&a,&b,NULL);
+    setNode2(&b,NULL,NULL);
+    bool x = equalPaths(&a);
+    cout<< "test bool: "<<x<<endl;
+}
 
 int main()
 {
+  bool x = testRootLeft();
+  return 0;
+  
   a = new Node(1);
   b = new Node(2);
   c = new Node(3);
