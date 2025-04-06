@@ -139,6 +139,7 @@ protected:
     // Add helper functions here
 
 
+
 };
 
 /*
@@ -149,6 +150,8 @@ template<class Key, class Value>
 void AVLTree<Key, Value>::insert (const std::pair<const Key, Value> &new_item)
 {
     // TODO
+  
+  //AVLNode<Key, Value>* insertNode = new AVLNode<Key, Value>(new_item.first, new_item.second, nullptr);
 }
 
 /*
