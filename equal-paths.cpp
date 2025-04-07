@@ -13,10 +13,8 @@ int checkHeight(Node * root)
 {
   if(!root) 
     return 0;
-  
    int heightL = checkHeight(root->left);
    int heightR = checkHeight(root->right);
-  
 
   return 1+ max(heightL, heightR);
 }

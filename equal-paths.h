@@ -16,7 +16,6 @@ struct Node {
         key(k), left(lt), right(rt)
     {}
 };
-
 /**
  * @brief Returns true if all paths from leaves to root are the same length (height),
  *        and false otherwise
